@@ -8,6 +8,6 @@ namespace Zadanie1
 {
     class Rents
     {
-        private int isbnandroid htc 
+        private int isbnandroid htc ;
     }
 }
