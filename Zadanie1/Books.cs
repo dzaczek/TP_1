@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Zadanie1
 {
-    class Books
+    class Book
     {
         private int id;
         private string title;
         private  int isbn;
         private string author;
 
-        public Books(int id,string title,int isbn,string author)
+        public Book(int id,string title,int isbn,string author)
         {
             this.id =   id;
             this.author = author;

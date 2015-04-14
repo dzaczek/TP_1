@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zadanie1
 {
-    class Readers
+    class Reader
     {
         private int pesel;
         private int age;
