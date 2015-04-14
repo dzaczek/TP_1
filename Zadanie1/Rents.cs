@@ -9,6 +9,7 @@ namespace Zadanie1
 {
     class Rents
     {
+        private iny id;
         private string idBook;
         private int isbn  ;
         private string name;
@@ -17,8 +18,9 @@ namespace Zadanie1
 
         public void PrintRents()   {      Console.Out.Writeline("Book {0}, Rent by {1}, Date {2}",idBook,name,date );    }
 
-        public Rents(string idBook,int isbn,string name)
+        public Rents(int id,string idBook,int isbn,string name)
         {
+            this.id = id;
           this.idBook=idBook;
     this.isbn=isbn;
     this.name=name;

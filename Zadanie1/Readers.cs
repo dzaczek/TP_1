@@ -8,6 +8,7 @@ namespace Zadanie1
 {
     class Readers
     {
+        private int pesel;
         private int age;
         private string name;
 

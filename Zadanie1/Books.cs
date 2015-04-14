@@ -8,12 +8,14 @@ namespace Zadanie1
 {
     class Books
     {
+        private int id;
         private string title;
         private  int isbn;
         private string author;
 
-        public Books(string title,int isbn,string author)
+        public Books(int id,string title,int isbn,string author)
         {
+            this.id =   id;
             this.author = author;
             this.isbn = isbn;
             this.title = title;
