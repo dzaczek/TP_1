@@ -17,7 +17,7 @@ namespace Zadanie1
             this.author = author;
             this.isbn = isbn;
             this.title = title;
-
+            
 
         }
 
