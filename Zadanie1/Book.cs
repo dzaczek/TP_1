@@ -10,10 +10,10 @@ namespace Zadanie1
     {
         private int id;
         private string title;
-        private  int isbn;
+        private string isbn;
         private string author;
 
-        public Book(int id,string title,int isbn,string author)
+        public Book(int id,string title,string isbn,string author)
         {
             this.id =   id;
             this.author = author;

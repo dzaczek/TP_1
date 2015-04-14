@@ -12,9 +12,9 @@ namespace Zadanie1
         static void Main(string[] args)
         {
 
-            List<Books> book = new List<Books>();
+            List<Book> book = new List<Book>();
 
-
+            book.Add(new Book(1,"Kochanowski","1234534562345","Jan Kochanowski"));
 
 
         }
