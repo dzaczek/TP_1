@@ -10,6 +10,12 @@ namespace Zadanie1
     {
         static void Main(string[] args)
         {
+
+            List<Books> book = new List<Books>();
+
+
+
+
         }
     }
 }
