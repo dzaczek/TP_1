@@ -21,15 +21,11 @@ namespace Zadanie1
 
             for (int i = 0; i < 100; i++)
             {
-                reader.Add(new Reader(tools.RandomString(8,15),15));
+                reader.Add(new Reader(tools.RandomString(5, 22), randObj.Next(16, 85), "89890638555"));
                 reader[i].PrintReaders();
             }
-
-
-
-
-            book.Add(new Book(0,"Mr T","1234534562345","Jan Kochanowski"));
-            for (int i = 0; i < 100; i++)
+             Console.ReadKey();
+              for (int i = 0; i < 100; i++)
             {
                 book.Add(new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
                 book[i].PrintBooks();

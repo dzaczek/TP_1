@@ -8,6 +8,7 @@ namespace Zadanie1
 {
     class Reader
     {
+        
         private string pesel;
         private int age;
         private string name;
@@ -27,7 +28,7 @@ namespace Zadanie1
 
         public void PrintReaders()
         {
-            Console.WriteLine("User {0}, age {1}", name, age);
+            Console.WriteLine("User {0}\t, age {1}\t Pesel {2}", name, age,pesel);
         }
 
 
