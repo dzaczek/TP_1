@@ -23,7 +23,7 @@ namespace Zadanie1
 
         }
 
-        public void PrintBooks() { Console.Out.WriteLine("Title: {0} \n Author: {1} \n,ISBN : {2}", title, author, isbn); }
+        public void PrintBooks() { Console.Out.WriteLine("id {3}\t\t Title: {0} \t Author: {1} \t,ISBN : {2}", title, author, isbn,id); }
 
 
     }

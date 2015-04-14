@@ -13,12 +13,12 @@ namespace Zadanie1
         private string name;
 
 
-        public Readers()
+        public Reader()
         {
             name = "N/A";
         }
 
-        public Readers(string name, int age)
+        public Reader(string name, int age)
         {
             this.name = name;
             this.age = age;
