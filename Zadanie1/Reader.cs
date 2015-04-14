@@ -8,7 +8,7 @@ namespace Zadanie1
 {
     class Reader
     {
-        private int pesel;
+        private string pesel;
         private int age;
         private string name;
 
@@ -18,11 +18,11 @@ namespace Zadanie1
             name = "N/A";
         }
 
-        public Reader(string name, int age)
+        public Reader(string name, int age,string pesel)
         {
             this.name = name;
             this.age = age;
-
+            this.pesel = pesel;
         }
 
         public void PrintReaders()

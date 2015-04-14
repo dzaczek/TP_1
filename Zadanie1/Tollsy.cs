@@ -22,6 +22,19 @@ namespace Zadanie1
                 }
                 return new string(buffer);
             }
+
+
+            public string RandomString(int x, int y)
+
+            {
+                int size=_rng.Next(x,y);
+                char[] buffer = new char[size];
+                for (int i = 0; i < size; i++)
+                {
+                    buffer[i] = _chars[_rng.Next(_chars.Length)];
+                }
+                return new string(buffer);
+            }
         
     }
 }

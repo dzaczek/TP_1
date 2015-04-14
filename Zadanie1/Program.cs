@@ -17,6 +17,16 @@ namespace Zadanie1
 
             Tollsy tools = new Tollsy();
             List<Book> book = new List<Book>();
+            List<Reader> reader = new List<Reader>();
+
+            for (int i = 0; i < 100; i++)
+            {
+                reader.Add(new Reader(tools.RandomString(8,15),15));
+                reader[i].PrintReaders();
+            }
+
+
+
 
             book.Add(new Book(0,"Mr T","1234534562345","Jan Kochanowski"));
             for (int i = 0; i < 100; i++)
