@@ -16,7 +16,7 @@ namespace Zadanie1
 
 
             Tollsy tools = new Tollsy();
-            List<Book> book = new List<Book>();
+        
             List<Reader> reader = new List<Reader>();
 
             for (int i = 0; i < 100; i++)
@@ -40,6 +40,12 @@ namespace Zadanie1
                 //book[i].PrintBooks();
             }
 
+
+              Console.ReadKey();
+            foreach(KeyValuePair<string, Book> kvp in _book)
+            {
+                Console.WriteLine("{0},  {1}", kvp.Key, kvp.Value.PrintBooks());
+            }
 
           //  Console.Out.WriteLine(tools.RandomString(16));
             Console.ReadKey();

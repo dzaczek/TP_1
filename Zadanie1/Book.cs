@@ -25,6 +25,7 @@ namespace Zadanie1
 
         public void PrintBooks() { Console.Out.WriteLine("id {3}\t\t Title: {0} \t Author: {1} \t,ISBN : {2}", title, author, isbn,id); }
 
+        public String PrintBooks() { return "id:" + id + "\t Title: " + title + " \t Author:"+ author +" \t,ISBN : "+isbn+"."; }
 
     }
 }
