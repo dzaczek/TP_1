@@ -44,7 +44,7 @@ namespace Zadanie1
               Console.ReadKey();
             foreach(KeyValuePair<string, Book> kvp in _book)
             {
-                Console.WriteLine("{0},  {1}", kvp.Key, kvp.Value.PrintBooks());
+                Console.WriteLine("{0},  {1}", kvp.Key, kvp.Value.StringBook());
             }
 
           //  Console.Out.WriteLine(tools.RandomString(16));
