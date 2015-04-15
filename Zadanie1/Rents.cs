@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Zadanie1
 {
-    class Rents
+    class Rents 
     {
         private int id;
         private string idBook;

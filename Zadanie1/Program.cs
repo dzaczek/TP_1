@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 
 namespace Zadanie1
 {
     class Program
     {
+       
         static void Main(string[] args)
         {
             Random randObj=new Random();
-
-
-
-            Tollsy tools = new Tollsy();
-        
+            Tollsy tools = new Tollsy(); //tools dor random generators 
             List<Reader> reader = new List<Reader>();
+            Dictionary<string, Book> _book = new Dictionary<string, Book>();
+            ObservableCollection<Rents> rent = new ObservableCollection<Rents>();
+
 
             for (int i = 0; i < 100; i++)
             {
@@ -25,11 +26,6 @@ namespace Zadanie1
                 reader[i].PrintReaders();
             }
              Console.ReadKey();
-
-
-             Dictionary<string, Book> _book = new Dictionary<string, Book>();
-
-
 
 
               for (int i = 0; i < 100; i++)
@@ -49,6 +45,8 @@ namespace Zadanie1
 
           //  Console.Out.WriteLine(tools.RandomString(16));
             Console.ReadKey();
+          
+
         }
     }
 }
