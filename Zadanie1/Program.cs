@@ -25,10 +25,19 @@ namespace Zadanie1
                 reader[i].PrintReaders();
             }
              Console.ReadKey();
+
+
+             Dictionary<string, Book> _book = new Dictionary<string, Book>();
+
+
+
+
               for (int i = 0; i < 100; i++)
             {
-                book.Add(new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
-                book[i].PrintBooks();
+
+                _book.Add(tools.RandomStringHash(8),new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
+              //  book.Add(new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
+                //book[i].PrintBooks();
             }
 
 
