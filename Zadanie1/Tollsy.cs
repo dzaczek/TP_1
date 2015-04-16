@@ -60,15 +60,23 @@ namespace Zadanie1
 
             private string rIS(int x, int y)
           {
-
-                return Convert.ToString(_rng.Next(x,y));
+              int j = 0;
+                string st="";
+                    string a=Convert.ToString(_rng.Next(x,y));
+                    int m = Convert.ToString(y).Length;
+                    int n = a.Length;
+                    j = m - n ;
+              //      Console.WriteLine("\t{0} \t{1}\t{2}\t\t{3} {4}", j,m,n,x,y);
+                    for (int i = 0; i < j; i++) { st = st + "0"; }
+                //    Console.WriteLine("{0}{1}",st,a);
+                        return  st+a;
           }
 
-
+        //Generate pesel nummber
             public string peselGenerator()
           {
               StringBuilder builder = new StringBuilder();
-              string[] pesel ={rIS(53,99),rIS(1, 2),rIS(1, 31),rIS(1, 99),rIS(1,999)};
+              string[] pesel ={rIS(53,99),rIS(1, 12),rIS(1, 31),rIS(1, 99),rIS(1,999)};
                 foreach (string value in pesel)
                 {
                     builder.Append(value);
@@ -77,6 +85,8 @@ namespace Zadanie1
 
                 return builder.ToString();
           }
+
+        // Generate text random strink  with size x nd y 
             public string RandomString(int x, int y)
 
             {
