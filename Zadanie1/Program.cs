@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using Ninject;
 
 
 namespace Zadanie1
@@ -15,10 +16,10 @@ namespace Zadanie1
         {
             Random randObj=new Random();
             Tollsy tools = new Tollsy(); //tools dor random generators 
-            List<Reader> reader = new List<Reader>();
-            Dictionary<string, Book> _book = new Dictionary<string, Book>();
-            ObservableCollection<Rents> rent = new ObservableCollection<Rents>();
-
+           // List<Reader> reader = new List<Reader>();
+         //   Dictionary<string, Book> _book = new Dictionary<string, Book>();
+           // ObservableCollection<Rents> rent = new ObservableCollection<Rents>();
+            /*
 
             for (int i = 0; i < 4;i++)
             {
@@ -51,6 +52,19 @@ namespace Zadanie1
 
 
             Console.ReadKey();
+            */
+            // Nowy kod tu na dole :)
+
+            IKernel kernel = new StandardKernel();
+
+            kernel.Bind<IDataStore>().To<DictionaryDataStore>();
+
+            Library library = kernel.Get<Library>();
+
+            library.ListBooks();
+            library.ListReaders();
+            library.RentBook("id_ksiaski", "id_czytelnika");
+            library.ListRentedBooks();
         }
     }
 }

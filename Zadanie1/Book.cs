@@ -13,6 +13,8 @@ namespace Zadanie1
         private string isbn;
         private string author;
 
+        public Book() { }
+
         public Book(string title,string isbn,string author)
         {
             
@@ -22,6 +24,12 @@ namespace Zadanie1
             
 
         }
+
+        public string Title { get { return title; } set { title = value; } }
+        public string ISBN { get { return isbn; } set { isbn = value; } }
+        public string Author { get { return author; } set { author = value; } }
+
+
 
         public void PrintBooks() { Console.Out.WriteLine(" Title: {0} \t Author: {1} \t,ISBN : {2}", title, author, isbn); }
 
