@@ -20,18 +20,18 @@ namespace Zadanie1
             ObservableCollection<Rents> rent = new ObservableCollection<Rents>();
 
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 4;i++)
             {
-                reader.Add(new Reader(tools.RandomString(5, 22), randObj.Next(16, 85), "89890638555"));
+                reader.Add(new Reader(tools.RandomString(5, 22), randObj.Next(16, 85),tools.peselGenerator()));
                 reader[i].PrintReaders();
             }
              Console.ReadKey();
 
 
-              for (int i = 0; i < 100; i++)
+              for (int i = 0; i <5; i++)
             {
 
-                _book.Add(tools.RandomStringHash(8),new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
+                _book.Add(tools.RandomStringHash(8),new Book(tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
               //  book.Add(new Book(i, tools.RandomString(15), tools.RandomString(4)+randObj.Next(10000000,12000000), tools.RandomString(14)));
                 //book[i].PrintBooks();
             }
@@ -45,8 +45,12 @@ namespace Zadanie1
 
           //  Console.Out.WriteLine(tools.RandomString(16));
             Console.ReadKey();
-          
 
+            //rent.Add(
+
+
+
+            Console.ReadKey();
         }
     }
 }

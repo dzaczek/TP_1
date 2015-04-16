@@ -9,7 +9,7 @@ namespace Zadanie1
     class Tollsy
     {
         private readonly Random _rng=new Random();
-            private const string _chars= "ABCDEFGHIJKLMNOPRSTUWXXYZ";
+            private const string _chars= "ABCDEFGHI JKLMNOPRSTUWXXYZ";
             private const string _chars2 = "AB123451234678967890";
 
     
@@ -58,6 +58,25 @@ namespace Zadanie1
                 }
             }
 
+            private string rIS(int x, int y)
+          {
+
+                return Convert.ToString(_rng.Next(x,y));
+          }
+
+
+            public string peselGenerator()
+          {
+              StringBuilder builder = new StringBuilder();
+              string[] pesel ={rIS(53,99),rIS(1, 2),rIS(1, 31),rIS(1, 99),rIS(1,999)};
+                foreach (string value in pesel)
+                {
+                    builder.Append(value);
+                }
+
+
+                return builder.ToString();
+          }
             public string RandomString(int x, int y)
 
             {

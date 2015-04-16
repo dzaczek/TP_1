@@ -8,14 +8,14 @@ namespace Zadanie1
 {
     class Book
     {
-        private int id;
+    
         private string title;
         private string isbn;
         private string author;
 
-        public Book(int id,string title,string isbn,string author)
+        public Book(string title,string isbn,string author)
         {
-            this.id =   id;
+            
             this.author = author;
             this.isbn = isbn;
             this.title = title;
@@ -23,9 +23,13 @@ namespace Zadanie1
 
         }
 
-        public void PrintBooks() { Console.Out.WriteLine("id {3}\t\t Title: {0} \t Author: {1} \t,ISBN : {2}", title, author, isbn,id); }
+        public void PrintBooks() { Console.Out.WriteLine(" Title: {0} \t Author: {1} \t,ISBN : {2}", title, author, isbn); }
 
-        public String StringBook() { return "id:" + id + "\t Title: " + title + " \t Author:"+ author +" \t,ISBN : "+isbn+"."; }
+        public String StringBook() { return "Title: " + title + " \t Author:"+ author +" \t,ISBN : "+isbn+"."; }
+        public string returnTitle() { return title; }
+        public string returnAuthor() { return author; }
+        public string returnIsbn() { return isbn; }
+        
 
     }
 }
