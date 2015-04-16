@@ -9,26 +9,25 @@ namespace Zadanie1
 {
     class Rents 
     {
-        private int id;
+        private string pesel;
         private string idBook;
-        private int isbn  ;
-        private string name;
         private string date;
         
 
-        public void PrintRents()   {      Console.Out.WriteLine("Book {0}, Rent by {1}, Date {2}",idBook,name,date );    }
+      //public void PrintRents()   {      Console.Out.WriteLine("Book {0}, Rent by {1}, Date {2}",idBook,pesel,date );    }
 
-        public Rents(int id,string idBook,int isbn,string name)
+        public Rents(string pesel, string idBook)
         {
-            this.id = id;
-          this.idBook=idBook;
-    this.isbn=isbn;
-    this.name=name;
-    DateTime nowdate=DateTime.Now;
-    this.date=nowdate.ToString();//"g",CultureInfo.CreareSpecifiCulture(""pl-PL")
+            this.pesel = pesel;
+            this.idBook=idBook;
+            DateTime nowdate=DateTime.Now;
+            this.date=nowdate.ToString();//"g",CultureInfo.CreareSpecifiCulture(""pl-PL")
         }
 
-
+        public void printRecord()
+    {
+        Console.WriteLine("{0}\t{1}\t{2}",date,idBook,pesel);
+    }
         
 
     }
